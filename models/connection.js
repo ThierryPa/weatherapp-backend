@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const connectionString = 'mongodb+srv://admin:lM04lK8dfLSaOq20@cluster0.s0kvsp0.mongodb.net/weatherapp';
+const connectionString = process.env.CONNECTION_STRING;
 
 mongoose.set("strictQuery", true); // Remove Mongoose warning in console
 
